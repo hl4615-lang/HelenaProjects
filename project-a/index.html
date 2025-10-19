@@ -9,14 +9,15 @@ CCLaboratories Biodiversity Atlas
 <html>
 
 <head>
-    <title>[ NAME OF YOUR CREATURE ]</title>
-
+    <title>[ Cloud F.A.R.T ]</title>
+    
     <!-- allow special characters, including Arabic, Chinese, Korean, Japanese, etc. -->
     <meta charset="UTF-8">
     <!-- link the style sheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- import p5.js library -->
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/addons/p5.sound.min.js"></script>
     <script>
         // prevent scrolling when spacebar and arrow keys are pressed.
         window.addEventListener("keydown", function (e) { if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) { e.preventDefault(); } }, false);
@@ -26,7 +27,7 @@ CCLaboratories Biodiversity Atlas
 <body>
     <!-- title -->
     <div id="title-wrapper">
-        <h1 class="headline black">[ NAME OF YOUR CREATURE ]</h1>
+        <h1 class="headline white">[ Cloud F.A.R.T ]</h1>
     </div>
 
     <!-- main content -->
@@ -37,53 +38,77 @@ CCLaboratories Biodiversity Atlas
         <div class="two-columns">
             <div class="left">
                 <h3 class="red">Scientific Name:</h3>
-                <p>NAME OF YOUR CREATURE</p>
+                <p>Cloud F.A.R.T — Form of Atomic Recomposition &amp; Transmutation</p>
 
                 <h3 class="red">Discovered by / at:</h3>
-                <p>Scientist's Name, Time of discovery</p>
+                <p>Helena Lan, 10/20/2025 in p5.js</p>
 
                 <h3 class="green">Family:</h3>
-                <p>This is part of the story telling of your project. Add the relevant information for the creature you
-                    discovered.</p>
-            </div>
-            <div class="right">
-                <h3 class="green">Habitat:</h3>
-                <p>Feel free to modify/add information as you want.</p>
-
-                <h3 class="green">Appearance:</h3>
-                <p>This text is part of the story telling of your project. You created this creature then you can give
-                    all the information about it.</p>
+                <p><strong>Unclassified</strong> — a unique non-carbon-based organism with no known lineage.</p>
 
                 <h3 class="green">Key Characteristics:</h3>
                 <ul>
-                    <li>Flies in the dark.</li>
-                    <li>Eats metal.</li>
-                    <li>(keep them short!)</li>
-                    <li>...</li>
+                    <li><strong><span style="color:lightgreen;">Generative and ever-changing</span></strong><br> — its form constantly evolves through loops, noise, and randomness, never repeating twice.</li>
+                    <li><strong><span style="color:lightgreen;">Amorphous, cloud-like morphology</span></strong><br> — composed of colorful drifting particles that expand, dissolve, and reform as if breathing.</li>
+                    <li><strong><span style="color:lightgreen;">Emotion-reactive behavior</span></strong><br> — shifts color, brightness, and motion when calm or disturbed by interaction.</li>
+                    <li><strong><span style="color:lightgreen;">Responsive digital habitat</span></strong><br> — interacts with the dynamic environment and the viewer, keeping its existence alive through motion and energy flow.</li>
+                    <li><strong><span style="color:lightgreen;">Atomic recomposition ability</span></strong><br> — alters nearby forms and colors upon contact, simulating matter transmutation.</li>
+                
                 </ul>
+                   
+            </div>
+            <div class="right">
+                <h3 class="green">Habitat:</h3>
+                <p>From a non-carbon-based ecosystem beyond our known universe, and arrived on Earth through a transient wormhole. 
+                <p>Its native environment likely consists of high-energy plasma fields where atomic structures can be freely rearranged
+                    — conditions incompatible with terrestrial chemistry.</p>
+                <p>Unable to survive in Earth's physical reality, it now inhabits an open digital atmosphere
+                    — a simulated space of motion, noise, and fluctuating energy.</p>
+
+                <h3 class="green">Appearance:</h3>
+                <p>An ever-shifting, soft, glowing cloud made of many luminous tiny particles.
+                <p>Its shape is never fixed — it constantly shifts, expands, and contracts like a living mist.</p>
+                <p>The particles vary in brightness and color, creating gentle pulses of light that change with its mood.</p>
+                <p>At its center glows a faint rhythmic core, giving the impression of breathing or thought within the cloud.</p>
+
+                
             </div>
         </div>
         <div class="one-column">
+            <h3><span class="yellow"><strong>What we know so far about [ Cloud F.A.R.T]?</strong></span></h3>
+            <p>Cloud F.A.R.T is a generative, ever-changing, non-carbon-based, cloud-like lifeform composed of countless luminous particles.</p>
+                <p>Its amorphous body has no fixed structure—constantly expanding, contracting, and dissolving as if breathing. 
+                Each micro-particle differs in brightness, opacity, and hue, forming a shimmering, living mist that hovers between visibility and disappearance.</p>
+                The organism's movement emerges from randomness and interaction:
+                it drifts curiously toward nearby motion yet scatters in sudden fear,
+                its color palette shifting in response to emotional states—cool and soft when calm, vivid and erratic when agitated.</p>
+                <p style="margin-bottom: 40px;">Beyond its ethereal form lies its defining ability: Cloud F.A.R.T can rearrange the atomic structures of surrounding materials,
+                briefly altering their color or state, as if performing real-time alchemy.
+                Each encounter with it produces a unique configuration—alive, unpredictable, and never repeating the same way twice.
+            </p>
+            
+            <h3><span class="yellow"><strong>Guidelines for human interaction with this creature</strong></span></h3>
             <p>
-                <span class="yellow">What we know so far about [ NAME OF YOUR CREATURE ]?</span>
-                The giraffe is a large African hoofed mammal belonging to the genus Giraffa. It is the tallest living
-                terrestrial animal and the largest ruminant on Earth. Traditionally, giraffes have been thought of as
-                one species, Giraffa camelopardalis, with nine subspecies. Most recently, researchers proposed dividing
-                them into up to eight extant species due to new research into their mitochondrial and nuclear DNA, as
-                well as morphological measurements. Seven other extinct species of Giraffa are known from the fossil
-                record. (This is from Wikipedia, write the story, history, facts, tales, myths, anecdotes about your
-                creature.)
-                <br>
-                <span class="yellow">Guidelines for human interaction with this creature</span> This text can double as
-                fictional part of your story, but could also include instructional aspects on how to interact with your
-                sketch above.
+                <ul>
+                <li><strong>Move the Mouse</strong> - Normal <span style="color:DeepSkyBlue;">Mode</span> (Mouse follow & Sense line)</li>
+                <li><strong>Press the Mouse</strong> - Panic <span style="color:DeepSkyBlue;">Mode</span> (Fast motion)</li>
+                <li><strong>Press Key "1"</strong> - Color flash <span style="color:Gold;">Pattern 1</span></li>
+                <li><strong>Press Key "2"</strong> - Color flash <span style="color:Gold;">Pattern 2</span></li>
+                <li><strong>Press Key "z"</strong> - Angular variation <span style="color:LightCoral;">Form</span></li>
+                <li><strong>Press Key "X"</strong> - Spread <span style="color:LightCoral;">Form</span> (Mouse position - assemble & disperse)</li>
+                <li><strong>Press Key "C"</strong> - Helix <span style="color:LightCoral;">Form</span> (Mouse position - assemble & disperse)</li>
+                <li><strong>Press Key "S"</strong> - Rectangle <span style="color:LightCoral;">Form</span> (Mouse position - strokeweight)</li>
+                <li><strong>Press Key "SPACE</strong>" - Floating <span style="color:LightCoral;">Form</span></li>
+                </ul>
+            
+                <strong>Try different combinations of <span style="color:DeepSkyBlue;">Mode</span> & <span style="color:Gold;">Pattern</span> & <span style="color:LightCoral;">Form</span>!<strong>
             </p>
         </div>
     </div>
 
     <!-- Footer -->
-    <div id="footer" class="black">
-        <p>A CCLab project made by [Your Name] in [Current Semester]</p>
+    <div id="footer" class="white">
+        <p>A CCLab project made by [Helena Lan] in [Fall 2025]</p>
     </div>
 
     <!-- Home: Link back to the ATLAS page-->
