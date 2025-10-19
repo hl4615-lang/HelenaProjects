@@ -270,7 +270,7 @@ function backGround() {
       //modify factor for size
       angle = map(d, 0, Diagonal, 0, 2 * PI);
       h = map(d, 0, Diagonal, 0, 100);
-      sw = map(d, 0, Diagonal, 0, 25);
+      sw = map(d, 0, Diagonal, 0, 20);
 
       push();
       translate(x, y);
