@@ -266,7 +266,7 @@ function backGround() {
       let d = dist(width / 2 + x1, height / 2 + y1, x, y);
       let Diagonal = dist(s / 2, s / 2, width, height);
       //max dist between center & each rect xy
-      let f = map(d, 0, Diagonal, 0.1, 3);
+      let f = map(d, 0, Diagonal, 0.05, 5);
       //modify factor for size
       angle = map(d, 0, Diagonal, 0, 2 * PI);
       h = map(d, 0, Diagonal, 0, 100);
