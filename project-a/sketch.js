@@ -261,8 +261,8 @@ function backGround() {
   rectMode(CENTER);
   noFill();
   let s = 40;
-  for (let x = s / 2; x < width+40; x += s) {
-    for (let y = s / 2; y < height+40; y += s) {
+  for (let x = s / 2; x < width + 40; x += s) {
+    for (let y = s / 2; y < height + 40; y += s) {
       let d = dist(width / 2 + x1, height / 2 + y1, x, y);
       let Diagonal = dist(s / 2, s / 2, width, height);
       //max dist between center & each rect xy
