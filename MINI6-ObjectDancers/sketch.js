@@ -54,6 +54,7 @@ class Stanley {
     this.blinkTimer = 0;
     this.t = 0
     this.heartSize = 10
+    this.moveSpeed = 0
 
   }
 
@@ -328,9 +329,15 @@ class Stanley {
 
     this.heartSize = map(sin(this.t), -1, 1, 5, 9)
 
+
     //overall
-    this.x = this.baseX + 30 * sin(this.t * 0.6);
-    this.y = this.baseY + 15 * sin(this.t * 1.2 + PI / 2);
+    if (keyIsPressed) {
+      this.moveSpeed = 5
+    } else {
+      this.moveSpeed = 1
+    }
+    this.x = this.baseX + 30 * sin(this.moveSpeed * this.t * 0.6);
+    this.y = this.baseY + 15 * sin(this.moveSpeed * this.t * 1.2 + PI / 2);
     this.s = this.baseScale + -0.3 * sin(this.t * 1.1);
 
   }
