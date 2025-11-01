@@ -49,12 +49,12 @@ class Stanley {
     //left upper arm, right upper arm, left bottom arm, right bottom arm
 
 
-    this.legSwingSpeed = 0
-    this.armSwingSpeed = 0
+    this.legSwingSpeed = 1
+    this.armSwingSpeed = 1
     this.blinkTimer = 0;
     this.t = 0
     this.heartSize = 10
-    this.moveSpeed = 0
+    this.moveSpeed = 1
 
   }
 
