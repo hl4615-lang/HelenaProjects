@@ -54,7 +54,7 @@ class Stanley {
     this.blinkTimer = 0;
     this.t = 0
     this.heartSize = 10
-    this.moveSpeed = 1
+    this.moveSpeed = 0
 
   }
 
