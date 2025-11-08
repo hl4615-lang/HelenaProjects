@@ -1,9 +1,14 @@
 // CCLab Mini Project - 9.R Particle World Template
 
-let NUM_OF_PARTICLES = 6; // Decide the initial number of particles.
+let NUM_OF_PARTICLES = 8; // Decide the initial number of particles.
 let MAX_OF_PARTICLES = 30; // Decide the maximum number of particles.
 
 let particles = [];
+let sound
+
+function preload() {
+  sound = loadSound("assets/Manta.mp3")
+}
 
 function setup() {
   let canvas = createCanvas(800, 500);
@@ -35,6 +40,7 @@ function draw() {
 
   }
 
+
   // limit the number of particles
   if (particles.length > MAX_OF_PARTICLES) {
     particles.splice(0, 1); // remove the first (oldest) particle
@@ -43,7 +49,13 @@ function draw() {
 
 function mousePressed() {
   particles.push(new Particle(mouseX, mouseY))
+  if (sound.isPlaying() == false) {
+    sound.play();
+  } else {
+    sound.stop();
+  }
 }
+
 
 function gradientSky() {
   for (let i = 0; i < height; i++) {
@@ -75,7 +87,7 @@ class Particle {
     this.colGold = color(12, 90, 100)
 
     this.speedX = map(this.s, 0.3, 1.2, -0.1, 0.04);
-    this.speedY = map(this.s, 0.3, 1.2, 4, 1);
+    this.speedY = map(this.s, 0.3, 1.2, 3, 0.5);
 
     this.ringR = 0;
     this.ringSat = 0;
@@ -160,6 +172,7 @@ class Particle {
     ellipse(0, this.s * (190 + ty), this.s * (15 + (-1.5 * x)), this.s * 30)
 
     pop()
+
 
   }
 
