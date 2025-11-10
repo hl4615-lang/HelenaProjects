@@ -18,6 +18,9 @@ function setup() {
   for (let i = 0; i < NUM_OF_PARTICLES; i++) {
     particles[i] = new Particle(random(width), random(height));
   }
+  mic = new p5.AudioIn()
+  mic.start()
+
 }
 
 function draw() {
@@ -178,7 +181,10 @@ class Particle {
 
 
   move() {
-    this.y = this.y - this.speedY
+    //mic factor
+    let f = map(mic.getLevel(), 0, 1, 1, 200)
+
+    this.y = this.y - this.speedY * f
     this.x = lerp(this.x, this.x0 + 50 * this.s * sin(frameCount * this.speedX), 0.1)
 
 

@@ -59,8 +59,9 @@ class Cloud {
         pop();
     }
     move() {
-        let f = map(mic.getLevel(), 0, 1, 1, 20)
-        this.x += this.speedX;
+        let f = map(mic.getLevel(), 0, 1, 1, 260)
+
+        this.x += this.speedX * f;
         // this.y = this.y0 + this.s * sin(frameCount * this.speedY);
         this.y = lerp(this.y, this.y0 + 3000 / this.s * sin(frameCount * this.speedY), 0.1)
     }

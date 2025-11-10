@@ -29,7 +29,7 @@ function draw() {
   for (let i = 0; i < c.length; i++) {
     c[i].display();
     c[i].move();
-
+    let level = mic.getLevel();
     for (let j = 0; j < c.length; j++) {
       if (i != j) {
         c[i].checkCollision(c[j])
